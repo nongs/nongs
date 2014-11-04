@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>언터쳐블 : 1%의 우정</title>
+  <style>
+    .background {
+        width : 210mm;
+        height : 297mm;
+        border : 1px solid gray;
+        background-image : url('/poster.jpg');
+        background-size : 100% 100%;
+    }
+    .content {
+      width: 130mm;
+      height: 217mm;
+      padding : 20mm 20mm;
+      margin: 30mm 20mm;
+      background-color:rgba(255,255,255,0.85);
+      border: 1px solid black;
+    }
+    h1 {
+      margin-bottom : 1mm;
+    }
+    h6 {
+      margin-top:0mm;
+      color : gray;
+    }
+    h3{
+      padding:5px 0;
+    }
+    span {
+      font-size:10pt;
+    }
+    ul {
+      margin-top:0;
+      padding:0px 0;
+    }
+    .link {
+      font-size:11pt;
+    }
+    img {
+      width:60mm;
+      height : 43mm;
+    }
+  </style>
+</head>
+<body>
+  <div class="background">
+    <div class="content">
+      <h1>언터쳐블 : 1%의 우정</h1>
+      <h6>Intouchables, Untouchable, 2011</h6>
+      <h3>Directer ; <span>올리비에르 나카체, 에릭 토레다노 <a href="directer.html" class="link">더보기</a></span></h3>
+      <h3>Character ; <span>프랑수아 클루제(필립), 오마 사이(드리스) <a href="character.html" class="link">더보기</a></span></h3>
+      <h3>Story ; <a href="story.html" class="link">더보기</a></h3>
+      <h3>Photo
+      <ul>
+       <img src="/1.jpg" alt="no image">
+       <img src="/1.jpg" alt="no image">
+       <img src="/1.jpg" alt="no image">
+       <img src="/1.jpg" alt="no image">
+       <img src="/1.jpg" alt="no image">
+       <img src="/1.jpg" alt="no image">
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
