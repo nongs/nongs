@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+  <title>분노의 질주</title>
+  <style>
+            @media screen and (max-width:360px){
+              body {
+                background-color:black;
+              }
+              .background {
+                margin:0 auto;
+                background-image:url('background2.jpg');
+                background-size:100% 100%;
+                  width:300px;
+                height:450px;
+              }
+              .opacity {
+                width:100%;
+                height:100%;
+                background-color:rgba(0,0,0,0.5);
+              }
+              .popup {
+                position:absolute;
+                top:10px;
+                font-size:12px;
+                margin:0 40px;
+                padding:10px;
+                width:200px;
+                height:350px;
+                background-color:rgba(0,0,0,0.9);
+                color:#fff;
+                line-height: 16px;
+              }
+              .title {
+                position:absolute;
+                top:380px;
+               }
+              img{
+                display:block;
+              }
+              .title1 {
+                width:120px;
+              }
+              .title2 {
+                width:45px;
+                margin:0 80px;
+              }
+              .li {
+                padding:10px 0;
+                width:200px;
+                float:right;
+              }
+              .close{
+                float:right;
+                width:10px;
+              }
+              .button{
+                padding-top:50px;
+              }
+              ul{
+                list-style-type: none;
+              }
+              .btimage {
+                display:inline-block;
+                width:30px;
+                top:20px;
+                margin-right:10px;
+                margin-top:7px;
+              }
+              a {
+                font-family: Helvetica, "The times Romans", arial;
+                font-size:15px;
+                color:orange;
+                background-color: rgba(0,0,0,0.1);
+                text-decoration:none;
+                margin-top:0px;
+                padding-top:0px;
+              }
+              .car {
+                margin:10px 5px; 
+                width:50px;
+                float:left;
+              }
+              span{
+                font-family: -윤고딕310;
+                font-weight: bold;
+              }
+              .history {
+                font-weight:normal;
+              }
+            }
+            @media screen and (min-width: 361px) and (max-width:640px){
+              body {
+                background-color:black;
+              }
+              .background {
+                margin:0 auto;
+                background-image:url('background2.jpg');
+                background-size:100% 100%;
+                  width:600px;
+                height:900px;
+              }
+              .opacity {
+                width:100%;
+                height:100%;
+                background-color:rgba(0,0,0,0.5);
+              }
+              .popup {
+                position:absolute;
+                top:40px;
+                font-size:16px;
+                margin:0 90px;
+                padding:30px;
+                width:360px;
+                height:500px;
+                background-color:rgba(0,0,0,0.7);
+                color:#fff;
+                line-height: 22px;
+              }
+              .title {
+                position:absolute;
+                top:750px;
+               }
+              img{
+                display:block;
+              }
+              .title1 {
+                width:300px;
+              }
+              .title2 {
+                margin:0 190px;
+                width:120px;
+              }
+              .li {
+                padding:10px 0;
+                width:360px;
+                float:right;
+              }
+              .close{
+                float:right;
+                width:30px;
+              }
+              .button{
+                padding-top:50px;
+              }
+              ul{
+                list-style-type: none;
+              }
+              .btimage {
+                display:inline-block;
+                width:30px;
+                top:20px;
+                margin-right:10px;
+                margin-top:7px;
+              }
+              a {
+                font-family: Helvetica, "The times Romans", arial;
+                font-size:18px;
+                color:orange;
+                background-color: rgba(0,0,0,0.1);
+                text-decoration:none;
+                margin-top:0px;
+                padding-top:0px;
+              }
+              .car {
+                width:70px;
+                margin:10px 5px; 
+                float:left;
+              }
+              span{
+                font-family: -윤고딕310;
+                font-weight: bold;
+              }
+              .history {
+                font-weight:normal;
+              }
+            }
+            @media screen and (min-width: 641px){
+              body {
+                background-color:black;
+              }
+              .background {
+                margin:0 auto;
+                background-image:url('background2.jpg');
+                background-size:100% 100%;
+                  width:800px;
+                height:1200px;
+              }
+              .opacity {
+                position:absolute;
+                width:100%;
+                height:100%;
+                background-color:rgba(0,0,0,0.5);
+              }
+              .popup {
+                position:absolute;
+                top:50px;
+                font-size:21px;
+                margin:0 160px;
+                padding:40px;
+                width:400px;
+                height:700px;
+                background-color:rgba(0,0,0,0.7);
+                color:#fff;
+                line-height: 32px;
+              }
+              .title {
+                position:absolute;
+                top:1000px;
+               }
+              .title1 , .title2 {
+                display:block;
+              }
+              .title1 {
+                width:450px;
+              }
+              .title2 {
+                margin:0 270px;
+                width:200px;
+              }
+              .li {
+                padding:10px 0;
+                width:400px;
+                float:right;
+              }
+              .close{
+                float:right;
+                width:50px;
+              }
+              .button{
+                padding-top:50px;
+              }
+              ul{
+                list-style-type: none;
+              }
+              .btimage {
+                display:inline-block;
+                width:40px;
+                top:20px;
+                margin-right:10px;
+                margin-top:10px;
+              }
+              a {
+                font-family: Helvetica, "The times Romans", arial;
+                font-size:21px;
+                color:orange;
+                background-color: rgba(0,0,0,0.1);
+                text-decoration:none;
+                margin-top:0px;
+                padding-top:0px;
+              }
+              .car {
+                width:90px;
+                float:left;
+                margin:10px 5px; 
+              }
+              span{
+                font-family: -윤고딕310;
+                font-weight: bold;
+              }
+              .history {
+                font-weight:normal;
+              }
+  </style>
+</head>
+<body>
+  <div class="background">
+    <div class="opacity">
+      <div class="title">
+        <a href="index.html">
+        <img src="title.jpg" alt="no image" class="title1">
+        <img src="titleeng.jpg" alt="no image" class="title2">
+        </a>
+      </div>
+      <div class="button">
+       <ul>
+        <li><img src="button.png" alt="no image" class="btimage"><a href="story.html">story</a></li>
+        <li><img src="button.png" alt="no image" class="btimage"><a href="actor.html">actor and actress</a></li>
+        <li><img src="button.png" alt="no image" class="btimage"><a href="car.html">Car</a></li>
+       </ul>
+      </div>
+      <div class="popup">
+       <a href="index.html">
+        <img src="close.png" alt="close" class="close">
+       </a>
+         <h2>Car</h2>
+         <ul>
+          <li class="li"><img src="101.jpg" alt="car" class="car">
+          <span>마쯔다 RX-7(3세대) 1992년식<div class="history">배기량 1308cc<br>최대출력 255hp<br>최대토크 30.0kg.m</div></span>
+          </li>
+          <li class="li"><img src="102.jpg" alt="car" class="car">
+          <span>폭스바겐 투란(4세대) 1998년식<div class="history">배기량 1598cc<br>최대출력 105hp<br>최대토크 25.5kg.m</div></span>
+          </li>
+          <li class="li"><img src="103.jpg" alt="car" class="car">
+          <span>닛산 350Z 쿠페 2004년식<div class="history"> 배기량 3498cc<br>최대출력 306hp<br>최대토크 37.8kg.m</div></span>
+          </li>
+          <li class="li"><img src="104.jpg" alt="car" class="car">
+          <span>닷지 첼린저 1967년식<div class="history">배기량 5654cc<br>최대출력 372hp<br>최대토크 55.3kg.m</div></span>
+          </li>
+         </ul>
+     </div>
+    </div>
+  </div>
+</body>
+</html>
