@@ -4,6 +4,47 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
   <title>분노의 질주</title>
+   <script>
+var img1=new Array();
+var nos=6;
+var sizeWidth=34;
+var sizeHeight=37;
+var j=0;
+for (i=nos;i>=1;i--) {
+img1[j]="cursor1.jpg";
+j++;
+}
+      function create_div(idn,xp,yp,w,h,ht) {
+  document.write("<div id='"+idn+"'style=position:absolute;left:"+xp+";top:"+yp+";width:"+w+";height:"+h+";>");
+  document.write((ht)?ht:"");
+  document.write("</div>");
+}
+function image_cycle() {
+  var getXpos,getYpos;
+  for (var i=0;i<(nos-1);i++) {
+     getXpos = parseInt(document.getElementById("cur"+(i+1)).style.left.replace('px', ''));
+     getYpos = parseInt(document.getElementById("cur"+(i+1)).style.top.replace('px', ''));
+ document.getElementById("cur"+i).style.left=getXpos+'px';
+     document.getElementById("cur"+i).style.top=getYpos+'px';
+}
+}
+function new_image_pos() {
+   var Xpos=event.clientX+document.body.scrollLeft;
+   var Ypos=event.clientY+document.body.scrollTop;
+   document.getElementById("cur"+(nos-1)).style.left=Xpos+'px';
+   document.getElementById("cur"+(nos-1)).style.top=Ypos+'px';
+}
+function load_image() {
+for (var i=0;i<nos;i++) {
+  strimg="<img src='"+img1[i ]+"'width='"+sizeWidth+"'height='"+sizeHeight+"'border=0>";
+  create_div("cur"+i,i*10,i*10,sizeWidth,sizeHeight,strimg);
+}
+document.onmousemove=new_image_pos;
+setInterval("image_cycle()",50);
+}
+
+load_image();
+  </script>
   <style>
             @media screen and (max-width:360px){
               body {
@@ -114,7 +155,7 @@
                 margin:0 90px;
                 padding:30px;
                 width:360px;
-                height:630px;
+                height:800px;
                 background-color:rgba(0,0,0,0.7);
                 color:#fff;
                 line-height: 22px;
@@ -287,21 +328,35 @@
        </a>
          <h2>Actors and Actress</h2>
          <ul>
-          <li class="li"><img src="lucas.jpg" alt="lucas black" class="actor">
+          <li class="li"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="lucas.jpg" alt="lucas black" class="actor">
           <span>루카스 블랙 (숀 보스웰 역) <span class="history"><br>출생 1982년 11월 29일<br>작품 NCIS (2014)<br>수상 1996년 22회 새턴 어워즈 최우수 신인배우상 수상</span></span>
           </li>
-          <li class="li"><img src="kang.jpg" alt="sung kang" class="actor">
+          <li class="li"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="kang.jpg" alt="sung kang" class="actor">
           <span>성 강 (한 역) <span class="history"><br>출생 1972년 4월 8일<br>작품 갱 릴레이티드(2014)</span></span>
           </li>
-          <li class="li"><img src="bow.jpg" alt="bow wow" class="actor">
+          <li class="li"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="bow.jpg" alt="bow wow" class="actor">
           <span>바우 와우(트윙키 역) <span class="history"><br>출생 197년 3월 9일<br>작품 리콜드(2012)</span></span>
           </li>
-          <li class="li"><img src="brian.jpg" alt="brian tee" class="actor">
+          <li class="li"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="brian.jpg" alt="brian tee" class="actor">
           <span>브라이언 티 (D.K. 역) <span class="history"><br>출생 1977년 3월 15일<br>작품 우는 남자(2014)</span></span>
           </li>
-          <li class="li"><img src="caroline.jpg" alt="caroline ge souza correa" class="actor">
+          <li class="li"><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="caroline.jpg" alt="caroline ge souza correa" class="actor">
           <span>캐롤라인 드 소자 코렝 (이사벨라 역) <span class="history"><br>출생 1979년 5월 19일<br>작품 레드벨트(2008)</span></span>
           </li>
+
+          <script>
+
+function bigImg(x) {
+    x.style.height = "200px";
+    x.style.width = "150px";
+}
+
+function normalImg(x) {
+    x.style.height = "120px";
+    x.style.width = "80px";
+}
+           
+</script>
          </ul>
      </div>
     </div>

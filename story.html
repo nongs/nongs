@@ -4,6 +4,47 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
   <title>분노의 질주</title>
+   <script>
+var img1=new Array();
+var nos=6;
+var sizeWidth=34;
+var sizeHeight=37;
+var j=0;
+for (i=nos;i>=1;i--) {
+img1[j]="cursor1.jpg";
+j++;
+}
+      function create_div(idn,xp,yp,w,h,ht) {
+  document.write("<div id='"+idn+"'style=position:absolute;left:"+xp+";top:"+yp+";width:"+w+";height:"+h+";>");
+  document.write((ht)?ht:"");
+  document.write("</div>");
+}
+function image_cycle() {
+  var getXpos,getYpos;
+  for (var i=0;i<(nos-1);i++) {
+     getXpos = parseInt(document.getElementById("cur"+(i+1)).style.left.replace('px', ''));
+     getYpos = parseInt(document.getElementById("cur"+(i+1)).style.top.replace('px', ''));
+ document.getElementById("cur"+i).style.left=getXpos+'px';
+     document.getElementById("cur"+i).style.top=getYpos+'px';
+}
+}
+function new_image_pos() {
+   var Xpos=event.clientX+document.body.scrollLeft;
+   var Ypos=event.clientY+document.body.scrollTop;
+   document.getElementById("cur"+(nos-1)).style.left=Xpos+'px';
+   document.getElementById("cur"+(nos-1)).style.top=Ypos+'px';
+}
+function load_image() {
+for (var i=0;i<nos;i++) {
+  strimg="<img src='"+img1[i ]+"'width='"+sizeWidth+"'height='"+sizeHeight+"'border=0>";
+  create_div("cur"+i,i*10,i*10,sizeWidth,sizeHeight,strimg);
+}
+document.onmousemove=new_image_pos;
+setInterval("image_cycle()",50);
+}
+
+load_image();
+  </script>
   <style>
             @media screen and (max-width:360px){
               body {
