@@ -186,7 +186,7 @@ for (var i=0;i<nos;i++) {
   create_div("cur"+i,i*10,i*10,sizeWidth,sizeHeight,strimg);
 }
 document.onmousemove=new_image_pos;
-setInterval("image_cycle()",20);
+setInterval("image_cycle()",15);
 }
 
 load_image();
@@ -213,7 +213,7 @@ function myFunction() {
 </script>
      <ul>
      <li>
-    <button mouseover="myFunction()">Contents</button></li>
+    <button onmouseover="myFunction()">Contents</button></li>
       <li><img src="button.png" alt="no image" class="btimage"><a href="story.html"><span id="story"></span></a></li>
       <li><img src="button.png" alt="no image" class="btimage"><a href="actor.html"><span id="actor"></span></a></li>
       <li><img src="button.png" alt="no image" class="btimage"><a href="car.html"><span id="car"></span></a></li>
