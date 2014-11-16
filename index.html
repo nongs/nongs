@@ -152,7 +152,7 @@
   </style>
    <script>
 var img1=new Array();
-var nos=30;
+var nos=20;
 var sizeWidth=30;
 var sizeHeight=32;
 var j=0;
@@ -161,7 +161,7 @@ img1[j]="cursor1.jpg";
 j++;
 }
       function create_div(idn,xp,yp,w,h,ht) {
-  document.write("<div id='"+idn+"'style=position:absolute;left:"+xp+ 5";top:"+yp+";width:"+w+";height:"+h+";>");
+  document.write("<div id='"+idn+"'style=position:absolute;left:"+xp+";top:"+yp+";width:"+w+";height:"+h+";>");
   document.write((ht)?ht:"");
   document.write("</div>");
 }
@@ -186,7 +186,7 @@ for (var i=0;i<nos;i++) {
   create_div("cur"+i,i*10,i*10,sizeWidth,sizeHeight,strimg);
 }
 document.onmousemove=new_image_pos;
-setInterval("image_cycle()",10);
+setInterval("image_cycle()",20);
 }
 
 load_image();
@@ -213,7 +213,7 @@ function myFunction() {
 </script>
      <ul>
      <li>
-    <button onclick="myFunction()">Contents</button></li>
+    <button mouseover="myFunction()">Contents</button></li>
       <li><img src="button.png" alt="no image" class="btimage"><a href="story.html"><span id="story"></span></a></li>
       <li><img src="button.png" alt="no image" class="btimage"><a href="actor.html"><span id="actor"></span></a></li>
       <li><img src="button.png" alt="no image" class="btimage"><a href="car.html"><span id="car"></span></a></li>
