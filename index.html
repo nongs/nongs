@@ -160,7 +160,7 @@ for (i=nos;i>=1;i--) {
 img1[j]="cursor1.jpg";
 j++;
 }
-      function create_div(idn,xp+2,yp,w,h,ht) {
+      function create_div(idn,xp,yp,w,h,ht) {
   document.write("<div id='"+idn+"'style=position:absolute;left:"+xp+";top:"+yp+";width:"+w+";height:"+h+";>");
   document.write((ht)?ht:"");
   document.write("</div>");
@@ -168,7 +168,7 @@ j++;
 function image_cycle() {
   var getXpos,getYpos;
   for (var i=0;i<(nos-1);i++) {
-     getXpos = parseInt(document.getElementById("cur"+(i+1)).style.left.replace('px', ''));
+     getXpos = parseInt(document.getElementById("cur"+(i+1)).style.left.replace('px+1', ''));
      getYpos = parseInt(document.getElementById("cur"+(i+1)).style.top.replace('px', ''));
  document.getElementById("cur"+i).style.left=getXpos+'px';
      document.getElementById("cur"+i).style.top=getYpos+'px';
