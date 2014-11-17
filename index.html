@@ -211,10 +211,15 @@ function myFunction() {
     document.getElementById("car").innerHTML = "Car";
 }
 </script>
+<script>
+  function storys() {
+    document.getElementById("storys").href="story.html";
+  }
+</script>
      <ul>
      <li>
     <button onmouseover="myFunction()">Contents</button></li>
-      <li><img src="button.png" alt="no image" class="btimage"><a href="story.html"><span id="story"></span></a></li>
+      <li><img src="button.png" alt="no image" class="btimage"><a href="story.html" id="storys" onmouseover="storys()"><span id="story"></span></a></li>
       <li><img src="button.png" alt="no image" class="btimage"><a href="actor.html"><span id="actor"></span></a></li>
       <li><img src="button.png" alt="no image" class="btimage"><a href="car.html"><span id="car"></span></a></li>
      </ul>
