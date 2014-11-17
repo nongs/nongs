@@ -170,8 +170,8 @@ function image_cycle() {
   for (var i=0;i<(nos-1);i++) {
      getXpos = parseInt(document.getElementById("cur"+(i+1)).style.left.replace('px', ''));
      getYpos = parseInt(document.getElementById("cur"+(i+1)).style.top.replace('px', ''));
- document.getElementById("cur"+i).style.left=getXpos+'px';
-     document.getElementById("cur"+i).style.top=getYpos+'px';
+ document.getElementById("cur"+i).style.left=getXpos+5+'px';
+     document.getElementById("cur"+i).style.top=getYpos+5+'px';
 }
 }
 function new_image_pos() {
