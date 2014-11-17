@@ -160,8 +160,8 @@ for (i=nos;i>=1;i--) {
 img1[j]="cursor1.jpg";
 j++;
 }
-      function create_div(idn,xp,yp,w,h,ht) {
-  document.write("<div id='"+idn+"'style=position:absolute;left:"+xp+"-3px;top:"+yp+";width:"+w+";height:"+h+";>");
+      function create_div(idn,xp+2,yp,w,h,ht) {
+  document.write("<div id='"+idn+"'style=position:absolute;left:"+xp+";top:"+yp+";width:"+w+";height:"+h+";>");
   document.write((ht)?ht:"");
   document.write("</div>");
 }
