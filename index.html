@@ -168,7 +168,7 @@ j++;
 function image_cycle() {
   var getXpos,getYpos;
   for (var i=0;i<(nos-1);i++) {
-     getXpos = parseInt(document.getElementById("cur"+(i+1)).style.left.replace('px'+1, ''));
+     getXpos = parseInt(document.getElementById("cur"+(i+1)).style.left.replace('px', ''));
      getYpos = parseInt(document.getElementById("cur"+(i+1)).style.top.replace('px', ''));
  document.getElementById("cur"+i).style.left=getXpos+'px';
      document.getElementById("cur"+i).style.top=getYpos+'px';
