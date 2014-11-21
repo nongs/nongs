@@ -11,7 +11,7 @@ var sizeWidth=34;
 var sizeHeight=37;
 var j=0;
 for (i=nos;i>=1;i--) {
-img1[j]="cursor1.jpg";
+img1[j]="mouse.jpg";
 j++;
 }
       function create_div(idn,xp,yp,w,h,ht) {
@@ -46,248 +46,73 @@ setInterval("image_cycle()",50);
 load_image();
   </script>
   <style>
-            @media screen and (max-width:360px){
               body {
                 background-color:black;
+                font-family: Helvetica, "The times Romans", arial;
               }
               .background {
                 margin:0 auto;
                 background-image:url('background2.jpg');
                 background-size:100% 100%;
-                  width:300px;
-                height:450px;
+                  width:97%;
+                padding-bottom:80%;
               }
               .opacity {
+                position:absolute;
                 width:100%;
                 height:100%;
-                background-color:rgba(0,0,0,0.5);
+                background-color:rgba(0,0,0,0.7);
               }
               .popup {
                 position:absolute;
-                top:10px;
-                font-size:12px;
-                margin:0 40px;
-                padding:10px;
-                width:200px;
-                height:350px;
-                background-color:rgba(0,0,0,0.9);
-                color:#fff;
-                line-height: 16px;
-              }
-              .title {
-                position:absolute;
-                top:380px;
-               }
-              img{
-                display:block;
-              }
-              .title1 {
-                width:120px;
-              }
-              .title2 {
-                width:45px;
-                margin:0 80px;
-              }
-              .li {
-                padding:10px 0;
-                width:200px;
-                float:right;
-              }
-              .close{
-                float:right;
-                width:10px;
-              }
-              .button{
-                padding-top:50px;
-              }
-              ul{
-                list-style-type: none;
-              }
-              .btimage {
-                display:inline-block;
-                width:30px;
-                top:20px;
-                margin-right:10px;
-                margin-top:7px;
-              }
-              a {
-                font-family: Helvetica, "The times Romans", arial;
+                top:5%;
+                left:20%;
                 font-size:15px;
-                color:orange;
-                background-color: rgba(0,0,0,0.1);
-                text-decoration:none;
-                margin-top:0px;
-                padding-top:0px;
-              }
-              .car {
-                margin:10px 5px; 
-                width:50px;
-                float:left;
-              }
-              span{
-                font-family: -윤고딕310;
-                font-weight: bold;
-              }
-              .history {
-                font-weight:normal;
-              }
-            }
-            @media screen and (min-width: 361px) and (max-width:640px){
-              body {
-                background-color:black;
-              }
-              .background {
-                margin:0 auto;
-                background-image:url('background2.jpg');
-                background-size:100% 100%;
-                  width:600px;
-                height:900px;
-              }
-              .opacity {
-                width:100%;
-                height:100%;
-                background-color:rgba(0,0,0,0.5);
-              }
-              .popup {
-                position:absolute;
-                top:40px;
-                font-size:16px;
-                margin:0 90px;
-                padding:30px;
-                width:360px;
-                height:500px;
-                background-color:rgba(0,0,0,0.7);
-                color:#fff;
-                line-height: 22px;
-              }
-              .title {
-                position:absolute;
-                top:750px;
-               }
-              img{
-                display:block;
-              }
-              .title1 {
-                width:300px;
-              }
-              .title2 {
-                margin:0 190px;
-                width:120px;
-              }
-              .li {
-                padding:10px 0;
-                width:360px;
-                float:right;
-              }
-              .close{
-                float:right;
-                width:30px;
-              }
-              .button{
-                padding-top:50px;
-              }
-              ul{
-                list-style-type: none;
-              }
-              .btimage {
-                display:inline-block;
-                width:30px;
-                top:20px;
-                margin-right:10px;
-                margin-top:7px;
-              }
-              a {
-                font-family: Helvetica, "The times Romans", arial;
-                font-size:18px;
-                color:orange;
-                background-color: rgba(0,0,0,0.1);
-                text-decoration:none;
-                margin-top:0px;
-                padding-top:0px;
-              }
-              .car {
-                width:70px;
-                margin:10px 5px; 
-                float:left;
-              }
-              span{
-                font-family: -윤고딕310;
-                font-weight: bold;
-              }
-              .history {
-                font-weight:normal;
-              }
-            }
-            @media screen and (min-width: 641px){
-              body {
-                background-color:black;
-              }
-              .background {
-                margin:0 auto;
-                background-image:url('background2.jpg');
-                background-size:100% 100%;
-                  width:800px;
-                height:1200px;
-              }
-              .opacity {
-                position:absolute;
-                width:100%;
-                height:100%;
-                background-color:rgba(0,0,0,0.5);
-              }
-              .popup {
-                position:absolute;
-                top:50px;
-                font-size:21px;
-                margin:0 160px;
                 padding:40px;
-                width:400px;
-                height:700px;
-                background-color:rgba(0,0,0,0.7);
-                color:#fff;
-                line-height: 32px;
+                width:420px;
+                height:600px;
+                color:white;
+                line-height: 26px;
               }
               .title {
                 position:absolute;
-                top:1000px;
+                top:100%;
                }
               .title1 , .title2 {
                 display:block;
               }
               .title1 {
-                width:450px;
+                width:50%;
               }
               .title2 {
-                margin:0 270px;
-                width:200px;
+                margin:0 33%;
+                width:20%;
               }
               .li {
                 padding:10px 0;
-                width:400px;
+                width:100%;
                 float:right;
               }
               .close{
                 float:right;
-                width:50px;
+                width:10%;
               }
               .button{
-                padding-top:50px;
+                padding-top:5%;
               }
               ul{
                 list-style-type: none;
               }
               .btimage {
                 display:inline-block;
-                width:40px;
+                width:30px;
                 top:20px;
                 margin-right:10px;
                 margin-top:10px;
               }
               a {
-                font-family: Helvetica, "The times Romans", arial;
                 font-size:21px;
                 color:orange;
-                background-color: rgba(0,0,0,0.1);
                 text-decoration:none;
                 margin-top:0px;
                 padding-top:0px;
@@ -304,6 +129,51 @@ load_image();
               .history {
                 font-weight:normal;
               }
+            @media screen and (max-width:440px){
+              .background {
+                min-width:300px;
+                  width:100%;
+                height:450px;
+              }
+              .popup {
+                position:absolute;
+                top:0%;
+                left:0%;
+                font-size:12px;
+                padding:10px;
+                width:100%;
+                background-color:rgba(0,0,0,0.9);
+                color:#fff;
+                line-height: 16px;
+              }
+              .li {
+                padding:10px 0;
+                width:100%;
+                float:right;
+              }
+              .close{
+                margin-right:5%;
+                width:8%;
+              }
+              .title {
+                display:none;
+               }
+              .button{
+                display:none;
+              }
+              .car {
+                margin:10px 5px; 
+                width:93%;
+                float:left;
+              }
+            }
+            @media screen and (min-width: 441px){
+              .background {
+                  min-width:600px;
+                  max-width:800px;
+                padding-bottom:800px;
+              }
+            }
   </style>
 </head>
 <body>
@@ -317,8 +187,8 @@ load_image();
       </div>
       <div class="button">
        <ul>
-        <li><img src="button.png" alt="no image" class="btimage"><a href="story.html">story</a></li>
-        <li><img src="button.png" alt="no image" class="btimage"><a href="actor.html">actor and actress</a></li>
+        <li><img src="button.png" alt="no image" class="btimage"><a href="story.html">Story</a></li>
+        <li><img src="button.png" alt="no image" class="btimage"><a href="actor.html">Actor</a></li>
         <li><img src="button.png" alt="no image" class="btimage"><a href="car.html">Car</a></li>
        </ul>
       </div>
@@ -347,8 +217,8 @@ function bigImg(x) {
 }
 
 function normalImg(x) {
-    x.style.height = "50px";
-    x.style.width = "90px";
+    x.style.height = "60px";
+    x.style.width = "100px";
 }
 </script>
          </ul>
