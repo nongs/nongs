@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Combining Transform Functions</title>
+<title>Stole_st</title>
 
 <style type="text/css">
 body{
 	background-color: ivory;
+	font-family: helvetica, "Adobe Gothic std", sans-serif;
 }
 div{
 	border-radius: 25px;
@@ -30,6 +31,7 @@ div{
 }
 .content{
 	width:720px;
+	margin:0 auto;
 }
 .container{
 	text-align: center;
@@ -41,9 +43,10 @@ div{
 label{
 	width: 130px;
 	height: 20px;
-	padding:3px;
+	padding:7px;
 	background-color: #ddd;
 	border-radius: 25px;
+	margin:0 10px;
 }
 .pink{
 	background-color: pink;
@@ -55,8 +58,12 @@ label{
 	background-color: skyblue;
 }
 .dot{
-	background:radial-gradient(rgba(100,100,100,0.8) 1px, rgba(0,0,0,1) 1px);
-	color:white;
+	background-color:#001;
+    background-image: radial-gradient(white 15%, transparent 16%),
+radial-gradient(white 15%, transparent 16%);
+background-size:50px 50px;
+background-position: 0 0, 25px 30px;
+	color:yellow;
 }
 img {
 	width:600px;
@@ -73,37 +80,50 @@ input[type=radio] {
 }
 article{
 	margin-top:50px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+article div{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 }
 </style>
 
 		<script src="jquery-1.6.2.min.js"></script>
 		<script>
+		$(document).ready(function(){
+			$('label').click(function(){
+					$('label').css('opacity', '1');
+					$(this).css('opacity', '0.5');
+			});
+		});
 			$(document).ready(function(){
 				$('label:first-child').click(function() {
-					$('article div').css('display', 'none');
+					$('#sec, #thi, #fou').css('display', 'none');
 					$("#fir").fadeToggle("slow");
 				});
 			});
 			$(document).ready(function(){
 				$('label:nth-child(2)').click(function() {
-					$('article div').css('display', 'none');
+					$('#fir, #thi, #fou').css('display', 'none');
 					$("#sec").fadeToggle("slow");
 				});
 			});
 			$(document).ready(function(){
 				$('label:nth-child(3)').click(function() {
-					$('article div').css('display', 'none');
+					$('#sec, #fir, #fou').css('display', 'none');
 					$("#thi").fadeToggle("slow");
 				});
 			});
 			$(document).ready(function(){
 				$('label:nth-child(4)').click(function() {
-					$('article div').css('display', 'none');
+					$('#sec, #thi, #fir').css('display', 'none');
 					$("#fou").fadeToggle("slow");
 				});
 			});
 		</script>
-
 </head>
 
 <body>
