@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Combining Transform Functions</title>
+
+<style type="text/css">
+body{
+	background-color: ivory;
+}
+div{
+	border-radius: 25px;
+	text-align: center;
+}
+.page{
+	margin-right: auto;
+	margin-left: auto;
+	width:460px;
+	height: 1000px;
+
+}
+.header {
+	width:460px;
+	height: 100px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.content{
+	width:460px;
+}
+.container{
+	text-align: center;
+}
+.logo{
+	width: 200px;
+	height: 100px;
+}
+label{
+	width: 50px;
+	height: 10px;
+	padding:3px;
+	background-color: #ddd;
+	border-radius: 25px;
+}
+.pink{
+	background-color: pink;
+}
+.stripe{
+    background:repeating-linear-gradient(90deg, rgba(255,255,255,0.8), rgba(0,0,0,0.3) 1px);
+}
+.blue{
+	background-color: skyblue;
+}
+.dot{
+	background:radial-gradient(rgba(100,100,100,0.8) 1px, rgba(0,0,0,1) 1px);
+	color:white;
+}
+img {
+	width:400px;
+	border-radius: 25px;
+	}
+input[type=radio] {
+	position: absolute;
+	left: -9999px;
+}
+#fir, #sec, #thi, #fou {
+	padding: 5px;
+	width: 440px;
+	display: none;
+}
+article{
+	margin-top:50px;
+}
+</style>
+
+		<script src="jquery-1.6.2.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('label:first-child').click(function() {
+					$('article div').css('display', 'none');
+					$("#fir").fadeToggle("slow");
+				});
+			});
+			$(document).ready(function(){
+				$('label:nth-child(2)').click(function() {
+					$('article div').css('display', 'none');
+					$("#sec").fadeToggle("slow");
+				});
+			});
+			$(document).ready(function(){
+				$('label:nth-child(3)').click(function() {
+					$('article div').css('display', 'none');
+					$("#thi").fadeToggle("slow");
+				});
+			});
+			$(document).ready(function(){
+				$('label:nth-child(4)').click(function() {
+					$('article div').css('display', 'none');
+					$("#fou").fadeToggle("slow");
+				});
+			});
+		</script>
+
+</head>
+
+<body>
+<div class="page">
+  <div class="header"><img src="logo.jpg" class="logo"></div>
+	<div class="content">
+		<input id="one" name="transforms" type="radio" value="1">
+		<input id="two" name="transforms" type="radio" value="2">
+        <input id="three" name="transforms" type="radio" value="3">
+        <input id="four" name="transforms" type="radio" value="4">
+        <input id="five" name="transforms" type="radio" value="5">
+        <input id="six" name="transforms" type="radio" value="6">
+        <div class="container">
+        <label for="one" class="pink">pink stole</label>
+
+        <label for="two" class="stripe">stripe  stole</label>
+
+        <label for="three" class="blue">blue  stole</label>
+
+        <label for="four" class="dot">dot stole</label>
+
+        <label for="five">event</label>
+
+        <label for="six">notice</label>
+        </div>
+		<article>
+				    <div id="fir"><img class="im" src="pink.jpg"></div>
+		    <div id="sec"><img class="im" src="stripe.jpg"></div>
+		    <div id="thi"><img class="im" src="blue.jpg"></div>
+		    <div id="fou"><img class="im" src="dot.jpg"></div>
+
+		</article>
+
+	</div>
+	</div>
+
+</body>
+</html>
