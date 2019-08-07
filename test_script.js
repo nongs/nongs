@@ -7,9 +7,9 @@ function CategoryList(props) {
       {category.tab_name}
     </li>
   );
-  render() {
-    return <ul>{categoryItem}</ul>;
-  }
+    return (
+      <ul>{categoryItem}</ul>
+      );
 }
 
 ReactDOM.render(
