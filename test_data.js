@@ -1,4 +1,4 @@
-{
+const getData = {
   "result": [
         {
             "tab_name": "여행명소",
